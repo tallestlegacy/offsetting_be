@@ -4,6 +4,7 @@ export async function GET() {
 	const query = `
     *[_type == 'project']{
         'heroImageUrl' : hero.asset -> url,
+        _id,
         title,
         locationName,
         lon,
