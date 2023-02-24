@@ -14,7 +14,7 @@ export async function GET() {
         story,
         requiredFunds,
         allocatedFunds,
-        achievements
+        report
       }
     `;
 	const res = await fetch(`https://hqypioh7.api.sanity.io/v2021-10-21/data/query/projects?query=${query}`);
